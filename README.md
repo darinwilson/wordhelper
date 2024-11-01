@@ -1,24 +1,5 @@
-# README
+# Wordhelper
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails 8 app that solves anagrams. The word list is taken from the dictionary found on most Unix-based systems in `/usr/share/dict/words`.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This was created in frustration when I was looking for anagram solvers online, and all the ones I found were so bogged down with ads as to render them unusable.
