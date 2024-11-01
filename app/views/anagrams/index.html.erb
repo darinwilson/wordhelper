@@ -1,0 +1,21 @@
+<%= link_to root_path, class: "text-decoration-none" do %>
+  <h1>Anagram Solver</h1>
+<% end %>
+
+<form action="/anagrams" method="get" class="mb-3" data-turbo-frame="wordlist" data-turbo-action="advance">
+  <div class="input-group">
+    <input type="text" name="word" class="form-control" placeholder="Enter word" aria-label="Enter word" size="25" style="max-width: 250px">
+  </div>
+</form>
+
+<%= turbo_frame_tag "wordlist" do %>
+  <% if @words.present? %>
+    <% @words.keys.sort.reverse.each do |word_length| %>
+      <% next if word_length == 1 %>
+      <h2 class="fs-4 mt-4"><%= word_length %>-letter Words:</h2>
+      <% @words[word_length].sort.each do |word| %>
+        <span class="badge bg-light text-dark mr-2 fs-6 fw-normal"><%= word %></span>
+      <% end %>
+    <% end %>
+  <% end %>
+<% end %>
