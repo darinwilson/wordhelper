@@ -12,7 +12,7 @@
   <% if @words.present? %>
     <% @words.keys.sort.reverse.each do |word_length| %>
       <% next if word_length == 1 %>
-      <h2 class="fs-4 mt-4"><%= word_length %>-letter words:</h2>
+      <h2 class="fs-5 mt-4"><%= word_length %>-letter words:</h2>
       <% @words[word_length].sort.each do |word| %>
         <span class="badge bg-light text-dark mr-2 fs-6 fw-normal"><%= word %></span>
       <% end %>
