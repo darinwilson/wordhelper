@@ -13,3 +13,7 @@
 }
 
 @import url(vendor/bootstrap@5.3.3.min.css);
+
+input.word-input {
+  text-transform: lowercase;
+}
