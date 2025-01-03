@@ -4,7 +4,7 @@
 
 <form action="/anagrams" method="get" class="mb-3" data-turbo-frame="wordlist" data-turbo-action="advance" onsubmit="document.activeElement.blur()">
   <div class="input-group">
-    <input type="text" name="word" class="form-control word-input" placeholder="Enter word" aria-label="Enter word" size="25" style="max-width: 250px">
+    <input type="text" name="word" class="form-control word-input" placeholder="Enter word" aria-label="Enter word" size="25" style="max-width: 250px" onclick="this.select()">
   </div>
 </form>
 
