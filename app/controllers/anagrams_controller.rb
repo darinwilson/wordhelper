@@ -6,6 +6,6 @@ class AnagramsController < ApplicationController
   private
 
   def grouped_sub_words
-    WordFinder.find_sub_words(params[:word]).group_by { |word| word.length}
+    WordFinder.find_sub_words(params[:word]).group_by { |word| word.length }
   end
 end
