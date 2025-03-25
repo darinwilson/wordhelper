@@ -9,6 +9,6 @@ class CreateDictionaries < ActiveRecord::Migration[8.0]
     end
 
     add_index :dictionaries, :word, unique: true
-    add_index :dictionaries, [:sorted_letters, :length]
+    add_index :dictionaries, [ :sorted_letters, :length ]
   end
 end
